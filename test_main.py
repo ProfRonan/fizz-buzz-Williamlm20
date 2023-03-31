@@ -10,9 +10,9 @@ from pytest import MonkeyPatch
 @pytest.mark.parametrize(
     "test_input",
     [
-         ("3"),
-         ("6"),
-         ("9"),
+        ("3", "Fizz"),
+        ("6", "Fizz"),
+        ("9", "Fizz"),
     ],
 )
 def test_fizz(monkeypatch: MonkeyPatch, test_input: str):
@@ -35,9 +35,9 @@ def test_fizz(monkeypatch: MonkeyPatch, test_input: str):
 @pytest.mark.parametrize(
     "test_input",
     [
-         ("5"),
-         ("10"),
-         ("20"),
+        ("5", "Buzz"),
+        ("10", "Buzz"),
+        ("20", "Buzz"),
     ],
 )
 def test_buzz(monkeypatch: MonkeyPatch, test_input: str):
@@ -60,9 +60,9 @@ def test_buzz(monkeypatch: MonkeyPatch, test_input: str):
 @pytest.mark.parametrize(
     "test_input",
     [
-         ("0"),
-         ("15"),
-         ("30"),
+        ("0", "FizzBuzz"),
+        ("15", "FizzBuzz"),
+        ("30", "FizzBuzz"),
     ],
 )
 def test_fizz_buzz(monkeypatch: MonkeyPatch, test_input: str):
@@ -83,9 +83,9 @@ def test_fizz_buzz(monkeypatch: MonkeyPatch, test_input: str):
 @pytest.mark.parametrize(
     "test_input",
     [
-         ("1"),
-         ("2"),
-         ("4"),
+        ("1", "1"),
+        ("2", "2"),
+        ("4", "4"),
     ],
 )
 def test_none(monkeypatch: MonkeyPatch, test_input: str):
