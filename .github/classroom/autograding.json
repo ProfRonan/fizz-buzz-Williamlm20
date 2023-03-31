@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Testa Fizz",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "python -m pytest test_main.py::test_fizz",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 25
+    },
+    {
+      "name": "Testa Buzz",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "python -m pytest test_main.py::test_buzz",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 25
+    },
+    {
+      "name": "Testa FizzBuzz",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "python -m pytest test_main.py::test_fizz_buzz",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 25
+    },
+    {
+      "name": "Testa os outros",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "python -m pytest test_main.py::test_none",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 25
+    }
+  ]
+}
